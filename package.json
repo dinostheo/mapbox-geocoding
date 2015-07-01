@@ -2,15 +2,26 @@
   "name": "mapbox-geocoding",
   "version": "0.0.1",
   "description": "A node module for querying the mapbox geocoding api.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "Dinos Theodorou",
   "keywords": [
     "mapbox",
     "geocoding",
     "api"
   ],
-  "author": "Dinos Theodorou",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dinostheo/mapbox-geocoding.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dinostheo/mapbox-geocoding/issues"
+  },
+  "homepage": "https://github.com/dinostheo/mapbox-geocoding",
+  "dependencies": {
+    "request": "^2.58.0"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "mocha": "^2.2.5"
+  },
   "license": "MIT"
 }
