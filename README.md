@@ -1,4 +1,4 @@
-echonestjs
+mapbox-geocoding
 ==========
 Simple node.js wrapper module for querying the geocoding api of mapbox v4.
 
