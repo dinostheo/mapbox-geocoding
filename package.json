@@ -1,6 +1,6 @@
 {
   "name": "mapbox-geocoding",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A node module for querying the mapbox geocoding api.",
   "author": "Dinos Theodorou",
   "keywords": [
@@ -22,6 +22,9 @@
   "devDependencies": {
     "chai": "^3.0.0",
     "mocha": "^2.2.5"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha tests/*.js -R spec"
   },
   "license": "MIT"
 }

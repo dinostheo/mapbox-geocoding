@@ -30,7 +30,7 @@ var __geocodeQuery = function (dataset, query, done) {
 
     request(url , function (err, response, body) {
         if (err || response.statusCode !== 200) {
-            return done(err || body);
+            return done(err || JSON.parse(body));
         }
 
         done(null, JSON.parse(body));
