@@ -1,6 +1,6 @@
 {
   "name": "mapbox-geocoding",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A node module for querying the mapbox geocoding api.",
   "author": "Dinos Theodorou",
   "keywords": [

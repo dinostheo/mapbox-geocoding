@@ -34,7 +34,7 @@ To run the tests execute:
 ```
 
 The tests have a configuration dependency, which is git ignored. To run the tests you will need config.js file under the config directory and of the following structure:
-```
+```js
 /**
  * Module configuration.
  *
