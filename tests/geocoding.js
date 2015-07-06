@@ -83,6 +83,39 @@ describe('Mapbox-Geocoding module testing.', function () {
 
                 done();
             });
-        })
-    })
+        });
+    });
+
+    describe('Success case of the reverse geocode method', function () {
+        before(function (done) {
+            geo.setAccessToken(config.access_token);
+
+            done();
+        });
+
+        it('should return an object with geo data', function (done) {
+            geo.reverseGeocode('mapbox.places', '4.8936580', '52.3731720', function (err, geoData) {
+                expect(err).to.be.a('null');
+                expect(geoData).to.have.property('type');
+                expect(geoData.type).to.equal('FeatureCollection');
+                expect(geoData).to.have.property('query');
+                expect(geoData.query).deep.equal([ 4.893658, 52.373172 ]);
+                expect(geoData).to.have.property('features');
+                expect(geoData.features).to.be.an('array');
+                expect(geoData.features[0]).to.have.property('id');
+                expect(geoData.features[0]).to.have.property('type');
+                expect(geoData.features[0]).to.have.property('text');
+                expect(geoData.features[0].text).to.equal('Dam');
+                expect(geoData.features[0]).to.have.property('place_name');
+                expect(geoData.features[0]).to.have.property('relevance');
+                expect(geoData.features[0]).to.have.property('center');
+                expect(geoData.features[0]).to.have.property('geometry');
+                expect(geoData.features[0]).to.have.property('bbox');
+                expect(geoData.features[0]).to.have.property('properties');
+                expect(geoData.features[0]).to.have.property('context');
+
+                done();
+            });
+        });
+    });
 });
