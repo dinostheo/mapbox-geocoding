@@ -3,7 +3,7 @@
  */
 var request = require('request');
 
-var BASE_URL = 'http://api.tiles.mapbox.com/v4/geocode/';
+var BASE_URL = 'https://api.tiles.mapbox.com/v4/geocode/';
 var ACCESS_TOKEN = null;
 
 /**
